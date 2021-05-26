@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: #d9d9d9;}
+body { margin: 15px 0px 0px 30px; font-family: 'Open Sans', "Helvetica Neue", sans-serif; }
+
+.header-font h2,h4{
+    font-weight: 600;
+}
+.documentation {
+    margin-top: 100px;
+    margin-left: 35px;
+}
+.documentation .mat-tab-group {
+    flex-direction: row;
+}
+.documentation .mat-tab-header{
+    border-bottom: none;
+}
+.documentation .mat-tab-header-pagination {
+    display: none!important;
+}
+.documentation .mat-tab-labels {
+    flex-direction: column!important;
+}
+.documentation .mat-tab-label {
+    justify-content: end;
+    min-width: 120px;
+}
+.documentation .mat-tab-body-wrapper {
+    margin-left: 100px;
+    width: 100%;
+}
+.documentation .mat-ink-bar {
+    bottom: -3px;
+}
+
+@media screen and (max-width: 720px){
+    .documentation {
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    .documentation .mat-tab-group {
+        flex-direction: column;
+    }
+    .documentation .mat-tab-labels {
+        flex-direction: row!important;
+    }
+    .documentation .mat-ink-bar {
+        bottom: 0;
+    }
+    .documentation .mat-tab-header{
+        border-bottom: none;
+        margin-bottom: 10px;
+    }   
+    .search-input{
+        margin-left: 40px!important;
+    }
+    .documentation .mat-tab-body-wrapper {
+        margin: 0px 20px;
+        width: 100%;
+    }
+    .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+        background-color: black;
+    }
+}
